@@ -27,14 +27,6 @@ class DataSource:
         )
         
         return DataSource(filtered_data)
-    
-    def select_date_range(self, start_date, end_date) -> pd.DataFrame:
-        # filtered_data = self._data.query(
-        #     " category == 'casa' "
-        # )
-
-        return DataSource(self._data)
-
 
     def create_pivot_table(self) -> pd.DataFrame:
         pt = self._data.pivot_table(
