@@ -1,0 +1,11 @@
+---
+en:
+  amount: Amount
+  app_title: DashExpenses
+  category: Category
+  month: Month
+  no_data: No data selected
+  select: Select...
+  select_all: Select all
+  year: Year
+  date_picker: Date Picker

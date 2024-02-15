@@ -1,0 +1,11 @@
+---
+pt:
+  amount: Preço
+  app_title: DashGastos
+  category: Categoria
+  month: Mês
+  no_data: Sem dados
+  select: Selecione...
+  select_all: Selecionar tudo
+  year: Ano
+  date_picker: "Selecionar Data"

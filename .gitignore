@@ -1,0 +1,5 @@
+api_access/secret_key.json
+tests.ipynb
+.venv/
+.env
+__pycache__/
