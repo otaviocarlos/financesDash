@@ -1,9 +1,0 @@
-en:
-  month: Month
-  expense: Expense
-  category: Category
-  line-chart-title: Expense Trend by Category
-  heat-map-title: Heatmap of Expenses by Category and Month
-  bubble-chart-title: Daily Expenses Bubble Chart
-  tree-map-title: Expenses Breakdown by Category and Product
-  area-chart-title: Stacked Area Plot

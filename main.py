@@ -16,6 +16,7 @@ def main() -> None:
 
     i18n.set("locale", const.LOCALE)
     i18n.load_path.append("locale")
+    i18n.set('file_format', 'json')
 
     datasets = {
         'transactions': DataSource(load_transaction_data()), 
