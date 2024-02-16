@@ -11,3 +11,6 @@ HEAT_MAP = "heat-map"
 BUBBLE_CHART = "bubble-chart"
 TREE_MAP = "tree-map"
 STACKED_AREA_CHART = 'area-chart'
+
+SHOW_EXPENSES = 'show-expenses'
+SHOW_BALANCE = 'show-balance'

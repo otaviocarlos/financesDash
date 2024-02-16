@@ -8,4 +8,9 @@ pt:
   select: Selecione...
   select_all: Selecionar tudo
   year: Ano
-  date_picker: "Selecionar Data"
+  date_picker: Selecionar Data
+  current_balance: Balanço
+  net_income: Resultado Liquido
+  expense_count: Número de Transações
+  balance_title: Resumo do Mês
+  expenses_charts: Gráficos de Gastos

@@ -15,8 +15,15 @@ class Sheets:
         credentials = ServiceAccountCredentials.from_json_keyfile_name(API_FILE_PATH, scopes=scopes)
         file = gspread.authorize(credentials)
         self.workbook = file.open('Financeiro')
+        self.opened_sheets = {}
 
     def get_sheet_by_name(self, name: str) -> pd.DataFrame:
-        sheet_credit = self.workbook.worksheet(name)
-        df = pd.DataFrame(sheet_credit.get_all_records())
-        return df
+        if name not in self.opened_sheets.keys():
+            print(f"Getting data for {name}...", end=" ")
+            sheet = self.workbook.worksheet(name)
+            df = pd.DataFrame(sheet.get_all_records())
+            self.opened_sheets[name] = df
+
+        print(f"Got data for {name}.")
+        return self.opened_sheets[name]
+    

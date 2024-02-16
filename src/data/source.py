@@ -47,6 +47,9 @@ class DataSource:
     
     def get_columns(self, columns: list) -> pd.DataFrame:
         return self._data[columns]
+    
+    def sum_expenses(self) -> int:
+        return self._data[DataSchema.AMOUNT].sum()
 
     @property
     def row_count(self) -> int:
