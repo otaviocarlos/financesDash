@@ -7,6 +7,7 @@
     "heat-map-title": "Mapa de Calor de Despesas por Categoria e Mês",
     "bubble-chart-title": "Gráfico de Bolhas de Despesas Diárias",
     "tree-map-title": "Detalhamento de Despesas por Categoria e Produto",
-    "area-chart-title": "Gráfico de Área Empilhada"
+    "area-chart-title": "Gráfico de Área Empilhada",
+    "bar-chart-title": "Gráfico de Barras"
   }
 }

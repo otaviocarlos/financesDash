@@ -28,11 +28,12 @@ def render(app: Dash, source: DataSource) -> html.Div:
             filtered_source.create_pivot_table(),
             x=DataSchema.CATEGORY,
             y=DataSchema.AMOUNT,
-            color="category",
+            color=DataSchema.CATEGORY,
             labels={
                 "category": i18n.t("general.category"),
                 "amount": i18n.t("general.amount"),
             },
+            title=i18n.t("charts.bar-chart-title")
         )
 
         return html.Div(dcc.Graph(figure=fig), id=ids.BAR_CHART)
