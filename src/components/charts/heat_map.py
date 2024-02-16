@@ -12,6 +12,7 @@ from datetime import date
 
 
 def render(app: Dash, source: DataSource) -> html.Div:
+    # BUG: it should add the year to the month vizualization, so that two months of different years wont be overlaped
     @app.callback(
         Output(ids.HEAT_MAP, "children"),
         [   
