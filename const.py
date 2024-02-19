@@ -1,5 +1,8 @@
+# general configs
 LOCALE = 'en'
+DAYS_TRESHOLD_FOR_GOAL_WARNING = 50
 
-
-EXPENSES_SHEET = 'gastos' # put yours
-INCOMING_SHEET = 'receita' # put yours
+# put yours sheets
+EXPENSES_SHEET = 'gastos' 
+INCOMING_SHEET = 'receita' 
+GOALS_SHEET = 'metas'

@@ -15,15 +15,20 @@ import const
 sheet = Sheets()
 
 class DataSchema:
-    DATE = 'date'
+    DATE = "date"
     CATEGORY = "category"
-    TITLE = 'title'
+    TITLE = "title"
     AMOUNT = "amount"
     TYPE = "type"
     ACCOUNT = "account"
-    YEAR = 'year'
-    MONTH = 'month'
+    YEAR = "year"
+    MONTH = "month"
 
+class GoalsSchema:
+    TITLE = "title"
+    GOAL = "goal"
+    AMOUNT = "amount"
+    LAST_UPDATED = "last_updated"
 
 def create_year_column(df: pd.DataFrame) -> pd.DataFrame:
     df[DataSchema.YEAR] = df[DataSchema.DATE].dt.year.astype(str)
@@ -100,3 +105,13 @@ def load_current_month_incoming() -> pd.DataFrame:
         remove_categories_from_ban_list
     )
     return preprocessor(data)
+
+def load_goals_data() -> pd.DataFrame:
+    data = sheet.get_sheet_by_name(const.GOALS_SHEET)
+    data[GoalsSchema.LAST_UPDATED] = pd.to_datetime(data[GoalsSchema.LAST_UPDATED])
+
+    data[GoalsSchema.AMOUNT] = data[GoalsSchema.AMOUNT].astype(float)
+    data[GoalsSchema.GOAL] = data[GoalsSchema.GOAL].astype(float)
+
+
+    return data

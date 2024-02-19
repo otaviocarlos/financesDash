@@ -6,10 +6,12 @@ from src.components.layout import create_layout
 from src.data.loader import (
     load_current_month_expenses, 
     load_transaction_data, 
-    load_current_month_incoming
+    load_current_month_incoming,
+    load_goals_data
     )
 from src.data.source import DataSource
 import const
+from src.data.source_goals import DataSourceGoals
 
 
 def main() -> None:
@@ -22,6 +24,7 @@ def main() -> None:
         'transactions': DataSource(load_transaction_data()), 
         'month_expenses': DataSource(load_current_month_expenses()),
         'month_incoming': DataSource(load_current_month_incoming()),
+        'goals': DataSourceGoals(load_goals_data())
         }
 
 

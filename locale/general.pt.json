@@ -13,6 +13,8 @@
     "net_income": "Resultado Líquido",
     "expense_count": "Número de Transações",
     "balance_title": "Resumo do Mês",
-    "expenses_charts": "Gráficos de Gastos"
+    "expenses_charts": "Gráficos de Gastos",
+    "goals_title": "Meus Objetivos",
+    "goal_warning_message": "AVISO: VOCÊ NÃO PROGREIDU POR MUITO TEMPO"
   }
 }

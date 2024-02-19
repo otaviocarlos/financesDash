@@ -13,7 +13,8 @@ from src.components.charts import (
 )
 
 from src.components.overview_charts import (
-    balance
+    balance,
+    goals
 )
 
 from ..data.source import DataSource
@@ -32,6 +33,15 @@ def create_layout(app: Dash, sources: List[DataSource]) -> html.Div:
                 children=[
                     html.H1(i18n.t("general.balance_title"), style={'color': 'black'}),
                     balance.render(app, sources['month_expenses'], sources['month_incoming'])
+                ]
+            ),
+            html.Hr(),
+            html.Div(
+                className="my-goals",
+                # style={'display': 'flex', 'flexDirection': 'row'},
+                children=[
+                    html.H1(i18n.t("general.goals_title"), style={'color': 'black'}),
+                    goals.render(app, sources['goals'])
                 ]
             ),
             html.Hr(),

@@ -12,5 +12,7 @@
     "net_income": "Net Income",
     "expense_count": "Number of Transactions",
     "balance_title": "Month Summary",
-    "expenses_charts": "Expenses Chart"
+    "expenses_charts": "Expenses Chart",
+    "goals_title": "My Goals",
+    "goal_warning_message": "WARNING: YOU HAVENT PROGRESSED FOR TOO LONG"
 }}

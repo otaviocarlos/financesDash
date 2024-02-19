@@ -14,3 +14,4 @@ STACKED_AREA_CHART = 'area-chart'
 
 SHOW_EXPENSES = 'show-expenses'
 SHOW_BALANCE = 'show-balance'
+SHOW_GOALS = 'show-goals'
