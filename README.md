@@ -1,9 +1,15 @@
 # Dash App Tutorial
 
+Code adapted when learning Dash with ArjanCodes. Original repository: https://github.com/ArjanCodes/2022-dash
+
 ## Running the app
+This app uses python 3.11
+Install the requirements
+```shell
+pip install -r requirements.txt
+```
 
 Run the following commands and open the local host web address chosen by Dash.
-
 ```shell
 python ./main.py
 ```
